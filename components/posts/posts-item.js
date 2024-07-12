@@ -10,10 +10,10 @@ function PostsItem({ post }) {
         year: 'numeric'
     });
 
-    const imagePath = `/images/posts/${image}`;
+    const imagePath = `/image/post/${image}`;
     return (
         <li className={classes.post}>
-            <Link href={`/posts/${slug}`}>
+            <Link href={`/post/${slug}`}>
 
                 <div className={classes.image}>
                     <Image src={imagePath} alt={title} width={300} height={200} />
@@ -23,7 +23,6 @@ function PostsItem({ post }) {
                     <time>{formattedDate}</time>
                     <p>{excerpt}</p>
                 </div>
-
             </Link>
         </li>
     );

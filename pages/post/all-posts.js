@@ -7,7 +7,7 @@ function AllPosts({ posts }) {
     return (
         <section className={classes.posts}>
             <h1>All Posts</h1>
-            <PostsGrid props={posts} />
+            <PostsGrid posts={posts} />
         </section>
     )
 }

@@ -1,6 +1,6 @@
 
-import Hero from "../components/hero"
-import FeaturedPost from "../components/featured-post"
+import FeaturedPost from "../components/home-page/featured-post"
+import Hero from "../components/home-page/hero"
 import Layout from "../components/layout/layout"
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image"
-import classes from "../components/hero.module.css"
+import classes from "./hero.module.css"
 function Hero() {
     return (
         <section className={classes.hero}>

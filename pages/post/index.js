@@ -1,17 +1,21 @@
+import { getAllPosts } from "../../lib/post-util"
 import AllPosts from "./all-posts"
 
 
-const DUMMMY_POSTS = [
-    { title: 'salam', image: 'amirali.png', excerpt: 'amirali', date: "2022-02-02", slug: 'getting-started-with-nextjs1' },
-    { title: 'salam', image: 'amirali.png', excerpt: 'amirali', date: "2022-02-02", slug: 'getting-started-with-nextjs2' },
-    { title: 'salam', image: 'amirali.png', excerpt: 'amirali', date: "2022-02-02", slug: 'getting-started-with-nextjs3' },
-    { title: 'salam', image: 'amirali.png', excerpt: 'amirali', date: "2022-02-02", slug: 'getting-started-with-nextjs4' },
-]
 
+export function getStaticProps() {
+    const allPosts = getAllPosts()
 
-function AllPostPage() {
+    return {
+        props: {
+            posts: allPosts
+        }
+    }
+}
+
+function AllPostPage(props) {
     return (
-        <AllPosts posts={DUMMMY_POSTS} />
+        <AllPosts posts={props.posts} />
     )
 }
 export default AllPostPage

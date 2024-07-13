@@ -12,4 +12,7 @@ function AllPosts({ posts }) {
     )
 }
 
+
+
+
 export default AllPosts 

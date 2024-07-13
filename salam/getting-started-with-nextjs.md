@@ -8,4 +8,4 @@ isFeatured: true
 
 # this is amirali
 
-this is a simple text with a [link](salam.com)
+this is a simple text with a [link](www.salam.com)

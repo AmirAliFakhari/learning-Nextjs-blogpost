@@ -2,6 +2,7 @@ import React from 'react'
 import classes from "./featured.module.css"
 import PostsGrid from '../posts/posts-grid'
 function FeaturedPost({ posts }) {
+    console.log(posts)
     return (
         <section className={classes.latest}>
             <h2>Featured Posts</h2>

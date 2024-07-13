@@ -7,13 +7,13 @@ const DUMMY_POST = {
     title: 'salam', image: 'amirali.png', excerpt: 'amirali', date: "2022-02-02", slug: 'getting-started-with-nextjs1', content: "# This is a first post"
 }
 
-function PostContent() {
-    const imagePath = `/image/post/${DUMMY_POST.image}`
+function PostContent({ post }) {
+    const imagePath = `/image/post/${post.image}`
     return (
         <article className={classes.content}>
-            <PostHeader title={DUMMY_POST.title} image={imagePath} />
+            <PostHeader title={post.title} image={imagePath} />
             <ReactMarkdown>
-                {DUMMY_POST.content}
+                {post.content}
             </ReactMarkdown>
         </article>
     )

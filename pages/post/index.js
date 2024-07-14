@@ -1,4 +1,4 @@
-import { getAllPosts } from "../../lib/post-util"
+import { getAllPosts } from "../../utils/post-util"
 import AllPosts from "./all-posts"
 
 

@@ -1,5 +1,5 @@
 import PostContent from "../../components/posts/post-detail/post-content"
-import { getPostData, getPostFiles } from "../../lib/post-util"
+import { getPostData, getPostFiles } from "../../utils/post-util"
 
 export function getStaticProps(context) {
     const { params } = context

@@ -1,4 +1,5 @@
 
+import Head from "next/head"
 import FeaturedPost from "../components/home-page/featured-post"
 import Hero from "../components/home-page/hero"
 import Layout from "../components/layout/layout"
@@ -16,11 +17,13 @@ export function getStaticProps() {
     }
 
 }
-
-
 function HomePage(props) {
     return (
         <Layout>
+            <Head>
+                <title>AmirALi</title>
+                <meat name="viewport" content="width=device-width, initial-scale=1" />
+            </Head>
             <Hero />
             <FeaturedPost posts={props.posts} />
         </Layout>
